@@ -1,0 +1,80 @@
+import { Question } from '../types';
+
+export const QUESTIONS: Question[] = [
+  // GÉOGRAPHIE
+  { id: 1001, themeId: 'geo', type: 'qcm', text: "Quelle est la capitale de la France ?", options: ["Paris", "Lyon", "Marseille", "Bordeaux"], correctAnswer: "Paris", explanation: "" },
+  { id: 1002, themeId: 'geo', type: 'qcm', text: "Quel est le plus grand océan du monde ?", options: ["L'océan Pacifique", "L'océan Atlantique", "L'océan Indien", "L'océan Arctique"], correctAnswer: "L'océan Pacifique", explanation: "" },
+  { id: 1003, themeId: 'geo', type: 'qcm', text: "Dans quel pays se trouve la Tour de Pise ?", options: ["L'Italie", "L'Espagne", "Le Portugal", "La Grèce"], correctAnswer: "L'Italie", explanation: "" },
+  { id: 1004, themeId: 'geo', type: 'qcm', text: "Quel est le plus long fleuve de France ?", options: ["La Loire", "La Seine", "Le Rhône", "La Garonne"], correctAnswer: "La Loire", explanation: "" },
+  { id: 1005, themeId: 'geo', type: 'qcm', text: "Sur quel continent se trouve l'Égypte ?", options: ["L'Afrique", "L'Asie", "L'Europe", "L'Amérique du Sud"], correctAnswer: "L'Afrique", explanation: "" },
+  { id: 1006, themeId: 'geo', type: 'qcm', text: "Quelle est la capitale de l'Espagne ?", options: ["Madrid", "Barcelone", "Séville", "Valence"], correctAnswer: "Madrid", explanation: "" },
+  { id: 1007, themeId: 'geo', type: 'qcm', text: "Quel pays a la forme d'une botte ?", options: ["L'Italie", "La Grèce", "Le Chili", "Le Portugal"], correctAnswer: "L'Italie", explanation: "" },
+  { id: 1008, themeId: 'geo', type: 'qcm', text: "Quelle est la plus grande île du monde ?", options: ["Le Groenland", "Madagascar", "Bornéo", "La Nouvelle-Guinée"], correctAnswer: "Le Groenland", explanation: "" },
+  { id: 1009, themeId: 'geo', type: 'qcm', text: "Dans quel pays se situe le mont Fuji ?", options: ["Le Japon", "La Chine", "La Corée du Sud", "Le Népal"], correctAnswer: "Le Japon", explanation: "" },
+  { id: 1010, themeId: 'geo', type: 'qcm', text: "Quelle mer borde la Côte d'Azur ?", options: ["La mer Méditerranée", "La mer du Nord", "La mer Baltique", "La mer Adriatique"], correctAnswer: "La mer Méditerranée", explanation: "" },
+  { id: 1101, themeId: 'geo', type: 'qcm', text: "Quel est le point culminant du continent américain ?", options: ["L'Aconcagua", "Le Denali", "Le Chimborazo", "Le mont Logan"], correctAnswer: "L'Aconcagua", explanation: "" },
+  { id: 1102, themeId: 'geo', type: 'qcm', text: "Quel pays d'Asie est enclavé entre l'Inde et la Chine ?", options: ["Le Népal", "Le Bangladesh", "Le Sri Lanka", "La Birmanie"], correctAnswer: "Le Népal", explanation: "" },
+  { id: 1103, themeId: 'geo', type: 'qcm', text: "Quelle est la capitale de la Nouvelle-Zélande ?", options: ["Wellington", "Auckland", "Christchurch", "Queenstown"], correctAnswer: "Wellington", explanation: "" },
+  { id: 1104, themeId: 'geo', type: 'qcm', text: "Quel fleuve traverse la ville de Budapest ?", options: ["Le Danube", "La Volga", "Le Rhin", "L'Elbe"], correctAnswer: "Le Danube", explanation: "" },
+  { id: 1105, themeId: 'geo', type: 'qcm', text: "Quel pays est le seul à être traversé à la fois par l'équateur et un tropique ?", options: ["Le Brésil", "L'Indonésie", "La Colombie", "Le Kenya"], correctAnswer: "Le Brésil", explanation: "" },
+
+  // HISTOIRE
+  { id: 2001, themeId: 'hist', type: 'qcm', text: "En quelle année a eu lieu la prise de la Bastille ?", options: ["1789", "1792", "1776", "1804"], correctAnswer: "1789", explanation: "" },
+  { id: 2002, themeId: 'hist', type: 'qcm', text: "Qui a découvert l'Amérique en 1492 ?", options: ["Christophe Colomb", "Vasco de Gama", "Magellan", "Amerigo Vespucci"], correctAnswer: "Christophe Colomb", explanation: "" },
+  { id: 2003, themeId: 'hist', type: 'qcm', text: "Quel roi de France était surnommé « le Roi-Soleil » ?", options: ["Louis XIV", "Louis XV", "Louis XVI", "François Ier"], correctAnswer: "Louis XIV", explanation: "" },
+  { id: 2004, themeId: 'hist', type: 'qcm', text: "En quelle année a débuté la Première Guerre mondiale ?", options: ["1914", "1916", "1912", "1918"], correctAnswer: "1914", explanation: "" },
+  { id: 2005, themeId: 'hist', type: 'qcm', text: "Qui était le premier empereur de France ?", options: ["Napoléon Bonaparte", "Charlemagne", "Louis-Napoléon Bonaparte", "Charles de Gaulle"], correctAnswer: "Napoléon Bonaparte", explanation: "" },
+  { id: 2101, themeId: 'hist', type: 'qcm', text: "Quel traité de 1648 a mis fin à la guerre de Trente Ans ?", options: ["Le traité de Westphalie", "Le traité de Versailles", "Le traité d'Utrecht", "Le traité d'Tordesillas"], correctAnswer: "Le traité de Westphalie", explanation: "" },
+  { id: 2102, themeId: 'hist', type: 'qcm', text: "Quel général carthaginois a traversé les Alpes avec des éléphants ?", options: ["Hannibal Barca", "Scipion l'Africain", "Hamilcar Barca", "Hasdrubal"], correctAnswer: "Hannibal Barca", explanation: "" },
+  { id: 2103, themeId: 'hist', type: 'qcm', text: "En quelle année la dynastie des Bourbons a-t-elle accédé au trône de France ?", options: ["1589", "1610", "1572", "1598"], correctAnswer: "1589", explanation: "" },
+  { id: 2104, themeId: 'hist', type: 'qcm', text: "Quel empereur romain a divisé l'Empire en deux parties ?", options: ["Théodose", "Dioclétien", "Constantin", "Justinien"], correctAnswer: "Théodose", explanation: "" },
+  { id: 2105, themeId: 'hist', type: 'qcm', text: "Quelle bataille de 732 a arrêté l'avancée des Arabes en France ?", options: ["La bataille de Poitiers", "La bataille de Tours", "La bataille de Vouillé", "La bataille de Tolbiac"], correctAnswer: "La bataille de Poitiers", explanation: "" },
+
+  // SCIENCES
+  { id: 3001, themeId: 'sci', type: 'qcm', text: "Quelle planète est la plus proche du Soleil ?", options: ["Mercure", "Vénus", "Mars", "Jupiter"], correctAnswer: "Mercure", explanation: "" },
+  { id: 3002, themeId: 'sci', type: 'qcm', text: "Quel gaz les plantes absorbent-elles pour la photosynthèse ?", options: ["Le dioxyde de carbone", "L'oxygène", "L'azote", "L'hydrogène"], correctAnswer: "Le dioxyde de carbone", explanation: "" },
+  { id: 3003, themeId: 'sci', type: 'qcm', text: "Combien d'os le corps humain adulte possède-t-il environ ?", options: ["206", "186", "256", "170"], correctAnswer: "206", explanation: "" },
+  { id: 3004, themeId: 'sci', type: 'qcm', text: "Quel est le plus grand mammifère du monde ?", options: ["La baleine bleue", "L'éléphant d'Afrique", "La baleine à bosse", "Le cachalot"], correctAnswer: "La baleine bleue", explanation: "" },
+  { id: 3005, themeId: 'sci', type: 'qcm', text: "Quelle est la formule chimique de l'eau ?", options: ["H₂O", "CO₂", "O₂", "H₂O₂"], correctAnswer: "H₂O", explanation: "" },
+  { id: 3101, themeId: 'sci', type: 'qcm', text: "Quel phénomène physique explique que la glace flotte sur l'eau ?", options: ["La densité de la glace est inférieure à celle de l'eau liquide", "La tension superficielle de l'eau", "La poussée d'Archimède uniquement", "La pression atmosphérique"], correctAnswer: "La densité de la glace est inférieure à celle de l'eau liquide", explanation: "" },
+  { id: 3102, themeId: 'sci', type: 'qcm', text: "Quel est le nom du processus par lequel une chenille se transforme en papillon ?", options: ["La métamorphose", "La mue", "La chrysalide", "L'hibernation"], correctAnswer: "La métamorphose", explanation: "" },
+  { id: 3103, themeId: 'sci', type: 'qcm', text: "Quelle particule subatomique porte une charge négative ?", options: ["L'électron", "Le proton", "Le neutron", "Le photon"], correctAnswer: "L'électron", explanation: "" },
+  { id: 3104, themeId: 'sci', type: 'qcm', text: "Quel est le métal le meilleur conducteur d'électricité ?", options: ["L'argent", "Le cuivre", "L'or", "L'aluminium"], correctAnswer: "L'argent", explanation: "" },
+  { id: 3105, themeId: 'sci', type: 'qcm', text: "Quel scientifique a découvert la radioactivité ?", options: ["Henri Becquerel", "Marie Curie", "Pierre Curie", "Ernest Rutherford"], correctAnswer: "Henri Becquerel", explanation: "" },
+
+  // DIVERTISSEMENT
+  { id: 4001, themeId: 'music', type: 'qcm', text: "Quel groupe britannique a chanté « Bohemian Rhapsody » ?", options: ["Queen", "The Beatles", "The Rolling Stones", "Led Zeppelin"], correctAnswer: "Queen", explanation: "" },
+  { id: 4002, themeId: 'music', type: 'qcm', text: "Quel film d'animation Disney raconte l'histoire d'un lion nommé Simba ?", options: ["Le Roi Lion", "Le Livre de la Jungle", "Bambi", "Tarzan"], correctAnswer: "Le Roi Lion", explanation: "" },
+  { id: 4003, themeId: 'music', type: 'qcm', text: "Quel chanteur français est connu pour « Je l'aime à mourir » ?", options: ["Francis Cabrel", "Jean-Jacques Goldman", "Johnny Hallyday", "Michel Sardou"], correctAnswer: "Francis Cabrel", explanation: "" },
+  { id: 4004, themeId: 'music', type: 'qcm', text: "Dans quel film un extraterrestre veut « téléphoner maison » ?", options: ["E.T. l'extra-terrestre", "Alien", "Rencontres du troisième type", "Men in Black"], correctAnswer: "E.T. l'extra-terrestre", explanation: "" },
+  { id: 4005, themeId: 'music', type: 'qcm', text: "Qui a chanté « Thriller », l'album le plus vendu de tous les temps ?", options: ["Michael Jackson", "Prince", "Stevie Wonder", "Whitney Houston"], correctAnswer: "Michael Jackson", explanation: "" },
+  { id: 4101, themeId: 'music', type: 'qcm', text: "Quel réalisateur japonais a réalisé « Les Sept Samouraïs » en 1954 ?", options: ["Akira Kurosawa", "Hayao Miyazaki", "Yasujirō Ozu", "Takeshi Kitano"], correctAnswer: "Akira Kurosawa", explanation: "" },
+  { id: 4102, themeId: 'music', type: 'qcm', text: "Quel opéra de Bizet se déroule à Séville et met en scène une gitane ?", options: ["Carmen", "La Traviata", "Les Noces de Figaro", "Madame Butterfly"], correctAnswer: "Carmen", explanation: "" },
+  { id: 4103, themeId: 'music', type: 'qcm', text: "Quel film de David Fincher met en scène un club secret de combats clandestins ?", options: ["Fight Club", "Seven", "Gone Girl", "Zodiac"], correctAnswer: "Fight Club", explanation: "" },
+  { id: 4104, themeId: 'music', type: 'qcm', text: "Quel artiste est connu pour « Wish You Were Here » ?", options: ["Pink Floyd", "Genesis", "Yes", "King Crimson"], correctAnswer: "Pink Floyd", explanation: "" },
+  { id: 4105, themeId: 'music', type: 'qcm', text: "Quelle actrice a interprété Hermione Granger ?", options: ["Emma Watson", "Emma Stone", "Emma Thompson", "Emily Blunt"], correctAnswer: "Emma Watson", explanation: "" },
+
+  // CULTURE
+  { id: 5001, themeId: 'art', type: 'qcm', text: "Qui a peint « La Joconde » ?", options: ["Léonard de Vinci", "Michel-Ange", "Raphaël", "Botticelli"], correctAnswer: "Léonard de Vinci", explanation: "" },
+  { id: 5002, themeId: 'art', type: 'qcm', text: "Quel écrivain français a écrit « Les Misérables » ?", options: ["Victor Hugo", "Émile Zola", "Gustave Flaubert", "Alexandre Dumas"], correctAnswer: "Victor Hugo", explanation: "" },
+  { id: 5003, themeId: 'art', type: 'qcm', text: "Dans quel musée parisien est exposée « La Joconde » ?", options: ["Le musée du Louvre", "Le musée d'Orsay", "Le Centre Pompidou", "Le musée Rodin"], correctAnswer: "Le musée du Louvre", explanation: "" },
+  { id: 5004, themeId: 'art', type: 'qcm', text: "Qui a écrit « Le Petit Prince » ?", options: ["Antoine de Saint-Exupéry", "Jules Verne", "Albert Camus", "Marcel Pagnol"], correctAnswer: "Antoine de Saint-Exupéry", explanation: "" },
+  { id: 5005, themeId: 'art', type: 'qcm', text: "Quel peintre est célèbre pour ses tournesols et sa nuit étoilée ?", options: ["Vincent van Gogh", "Claude Monet", "Paul Cézanne", "Paul Gauguin"], correctAnswer: "Vincent van Gogh", explanation: "" },
+  { id: 5101, themeId: 'art', type: 'qcm', text: "Quel peintre italien de la fin du XVIe siècle est connu pour son usage révolutionnaire du clair-obscur ?", options: ["Le Caravage", "Titien", "Tintoret", "Véronèse"], correctAnswer: "Le Caravage", explanation: "" },
+  { id: 5102, themeId: 'art', type: 'qcm', text: "Quel auteur tchèque a écrit « Le Procès » et « La Métamorphose » ?", options: ["Franz Kafka", "Milan Kundera", "Rainer Maria Rilke", "Thomas Mann"], correctAnswer: "Franz Kafka", explanation: "" },
+  { id: 5103, themeId: 'art', type: 'qcm', text: "Quel peintre néerlandais du XVe siècle a perfectionné la technique de la peinture à l'huile ?", options: ["Jan van Eyck", "Rogier van der Weyden", "Hans Memling", "Jérôme Bosch"], correctAnswer: "Jan van Eyck", explanation: "" },
+  { id: 5104, themeId: 'art', type: 'qcm', text: "Qui a écrit « Cent ans de solitude » ?", options: ["Gabriel García Márquez", "Mario Vargas Llosa", "Jorge Luis Borges", "Isabel Allende"], correctAnswer: "Gabriel García Márquez", explanation: "" },
+  { id: 5105, themeId: 'art', type: 'qcm', text: "Quel mouvement artistique né à Zurich en 1916 prône l'absurde ?", options: ["Le dadaïsme", "Le surréalisme", "Le futurisme", "L'expressionnisme"], correctAnswer: "Le dadaïsme", explanation: "" },
+
+  // SPORTS
+  { id: 6001, themeId: 'sport', type: 'qcm', text: "Combien de joueurs composent une équipe de football sur le terrain ?", options: ["11", "10", "9", "12"], correctAnswer: "11", explanation: "" },
+  { id: 6002, themeId: 'sport', type: 'qcm', text: "Dans quel sport utilise-t-on un volant ?", options: ["Le badminton", "Le tennis", "Le squash", "Le ping-pong"], correctAnswer: "Le badminton", explanation: "" },
+  { id: 6003, themeId: 'sport', type: 'qcm', text: "Quel pays a remporté la Coupe du monde de football en 2018 ?", options: ["La France", "La Croatie", "Le Brésil", "L'Allemagne"], correctAnswer: "La France", explanation: "" },
+  { id: 6004, themeId: 'sport', type: 'qcm', text: "Combien de trous comporte un parcours de golf standard ?", options: ["18", "9", "12", "16"], correctAnswer: "18", explanation: "" },
+  { id: 6005, themeId: 'sport', type: 'qcm', text: "Quel sport se pratique sur un tatami avec des ceintures de couleur ?", options: ["Le judo", "La boxe", "L'escrime", "La lutte"], correctAnswer: "Le judo", explanation: "" },
+  { id: 6101, themeId: 'sport', type: 'qcm', text: "Quel cycliste belge est surnommé « le Cannibale » ?", options: ["Eddy Merckx", "Roger De Vlaeminck", "Freddy Maertens", "Rik Van Looy"], correctAnswer: "Eddy Merckx", explanation: "" },
+  { id: 6102, themeId: 'sport', type: 'qcm', text: "Quel est le seul sport dans lequel la défense a le ballon ?", options: ["Le baseball", "Le cricket", "Le football américain", "Le basketball"], correctAnswer: "Le baseball", explanation: "" },
+  { id: 6103, themeId: 'sport', type: 'qcm', text: "Quel joueur de football est le meilleur buteur de l'histoire en sélection nationale ?", options: ["Cristiano Ronaldo", "Lionel Messi", "Ali Daei", "Pelé"], correctAnswer: "Cristiano Ronaldo", explanation: "" },
+  { id: 6104, themeId: 'sport', type: 'qcm', text: "Quel Grand Chelem de tennis se joue sur surface dure en Australie ?", options: ["L'Open d'Australie", "Wimbledon", "L'US Open", "Le Masters de Shanghai"], correctAnswer: "L'Open d'Australie", explanation: "" },
+  { id: 6105, themeId: 'sport', type: 'qcm', text: "Quel sport de combat thaïlandais utilise les poings, coudes, genoux et tibias ?", options: ["La boxe thaïlandaise", "Le karaté", "Le taekwondo", "Le kickboxing"], correctAnswer: "La boxe thaïlandaise", explanation: "" },
+];
