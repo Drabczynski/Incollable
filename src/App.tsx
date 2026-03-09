@@ -31,7 +31,10 @@ const SCORM = {
     let win: any = window;
     let findAPI = (w: any): any => {
       try {
-        if (w.API_1484_11) return w.API_1484_11;
+        // SCORM 2004
+        if (w.API_1484_11) return { api: w.API_1484_11, version: '2004' };
+        // SCORM 1.2
+        if (w.API) return { api: w.API, version: '1.2' };
         if (w.parent && w.parent !== w) return findAPI(w.parent);
       } catch (e) {
         return null;
@@ -41,26 +44,41 @@ const SCORM = {
     return findAPI(win);
   },
   init: () => {
-    const api = SCORM.getAPI();
-    if (api) api.Initialize("");
+    const res = SCORM.getAPI();
+    if (res) {
+      if (res.version === '2004') res.api.Initialize("");
+      else res.api.LMSInitialize("");
+    }
   },
   setScore: (score: number) => {
-    const api = SCORM.getAPI();
-    if (api) {
-      api.SetValue("cmi.score.scaled", (score / 100).toString());
-      api.SetValue("cmi.score.raw", score.toString());
-      api.SetValue("cmi.score.min", "0");
-      api.SetValue("cmi.score.max", "100");
-      api.Commit("");
+    const res = SCORM.getAPI();
+    if (res) {
+      if (res.version === '2004') {
+        res.api.SetValue("cmi.score.scaled", (score / 100).toString());
+        res.api.SetValue("cmi.score.raw", score.toString());
+        res.api.SetValue("cmi.score.min", "0");
+        res.api.SetValue("cmi.score.max", "100");
+      } else {
+        res.api.LMSSetValue("cmi.core.score.raw", score.toString());
+        res.api.LMSSetValue("cmi.core.score.min", "0");
+        res.api.LMSSetValue("cmi.core.score.max", "100");
+      }
+      res.version === '2004' ? res.api.Commit("") : res.api.LMSCommit("");
     }
   },
   complete: (passed: boolean) => {
-    const api = SCORM.getAPI();
-    if (api) {
-      api.SetValue("cmi.completion_status", "completed");
-      api.SetValue("cmi.success_status", passed ? "passed" : "failed");
-      api.Commit("");
-      api.Terminate("");
+    const res = SCORM.getAPI();
+    if (res) {
+      if (res.version === '2004') {
+        res.api.SetValue("cmi.completion_status", "completed");
+        res.api.SetValue("cmi.success_status", passed ? "passed" : "failed");
+        res.api.Commit("");
+        res.api.Terminate("");
+      } else {
+        res.api.LMSSetValue("cmi.core.lesson_status", passed ? "passed" : "failed");
+        res.api.LMSCommit("");
+        res.api.LMSFinish("");
+      }
     }
   }
 };
